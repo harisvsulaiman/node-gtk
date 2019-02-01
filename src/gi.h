@@ -7,15 +7,13 @@
 #include <nan.h>
 #include <girepository.h>
 #include "boxed.h"
+#include "util.h"
 
 
 using v8::Object;
 using v8::Local;
 using v8::Value;
 
-
-#define UTF8(s)         Nan::New<v8::String> (s).ToLocalChecked()
-#define RETURN(s)       info.GetReturnValue().Set(s)
 
 namespace GNodeJS {
 
